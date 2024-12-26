@@ -15,4 +15,4 @@ def generate_password(length, include_digits=True, include_punctuation=True):
 
 if __name__ == "__main__":
     length = int(input("Enter the desired password length: "))
-    print("Generated password:", generate_password(length))
+    print("Generated password:", generate_password())
