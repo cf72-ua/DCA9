@@ -1,11 +1,6 @@
-SISTEMA DE CONTROL DE VERSIONES
+Trabajo realizado por Carolina Fernández, NIE:X5438988F
 
-Práctica de git:
-$ ls -a -> mostrar archivos ocultos
-- Los comandos globales no los puede ver, especificar en el archivo de texto el comando utilizado
-y una lista de aquellos que tengamos que se pueden ver dentro del .git.
-- Los alias tienen que ser de comandos.
-- Hacer un commit al menos a cada rama, y hacer un merge a main.
+SISTEMA DE CONTROL DE VERSIONES
 
 Configuraciones de alias:
 - Local:
@@ -19,3 +14,5 @@ Configuraciones de alias:
     git config --global alias.ch "checkout"
     git config --global alias.br "branch"
     git config --global alias.com "commit"
+
+Añadimos un error en el software: no se añaden dígitos a pesar de que se deben añadir.
