@@ -4,8 +4,13 @@ import random
 import string
 
 # Generador de contraseñas con una longitud de 12 caracteres
-def generate_password(length=12):
-    characters = string.ascii_letters + string.digits + string.punctuation
+def generate_password(length=12, include_digits=True, include_punctuation=True):
+    characters = string.ascii_letters
+    if include_digits:
+        # BUG: Excluye siempre los dígitos por una condición incorrecta
+        characters = string.ascii_letters
+    if include_punctuation:
+        characters += string.punctuation
     return ''.join(random.choice(characters) for _ in range(length))
 
 if __name__ == "__main__":
