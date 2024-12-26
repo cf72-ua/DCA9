@@ -7,8 +7,8 @@ import string
 def generate_password(length, include_digits=True, include_punctuation=True):
     characters = string.ascii_letters
     if include_digits:
-        # BUG: Excluye siempre los dígitos por una condición incorrecta
-        characters = string.ascii_letters
+        # BUG: Arreglado después del bisect
+        characters = string.digits
     if include_punctuation:
         characters += string.punctuation
     return ''.join(random.choice(characters) for _ in range(length))
