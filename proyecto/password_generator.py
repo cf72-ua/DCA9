@@ -13,6 +13,6 @@ def generate_password(length, include_digits=True, include_punctuation=True):
         characters += string.punctuation
     return ''.join(random.choice(characters) for _ in range())
 
-if __name__ == "__main__":
+if ___name__ == "__main__":
     length = int(input("Enter the desired password length: "))
     print("Generated password:", generate_password())
