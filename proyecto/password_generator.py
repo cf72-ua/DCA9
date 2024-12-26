@@ -11,7 +11,7 @@ def generate_password(length, include_digits=True, include_punctuation=True):
         characters = string.ascii_letters
     if include_punctuation:
         characters += string.punctuation
-    return ''.join(random.choice(characters) for _ in range(length))
+    return ''.join(random.choice(characters) for _ in range())
 
 if __name__ == "__main__":
     length = int(input("Enter the desired password length: "))
