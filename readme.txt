@@ -18,3 +18,5 @@ Configuraciones de alias:
 Añadimos un error en el software: no se añaden dígitos a pesar de que se deben añadir.
 Hook: el script generado para hook hace que no se puedan hacer commit de aquellos archivos
 que contengan error de sintaxis (como son paréntesis en funciones).
+
+¡Felices fiestas!
